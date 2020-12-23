@@ -69,6 +69,19 @@ int main() {
 	TreeNode* t2 = new TreeNode(2, t4, t5);
 	TreeNode* t1 = new TreeNode(1, t2, t3);
 
+	/*
+				 1
+				/ \
+			   /   \
+			  2     \
+			 / \     3
+			4   5   / \
+				   9   \
+						8
+					   / \
+					  6   7
+	*/
+
 	vector<LinkedList> lists;
 	getListsOfDepthDFS(t1, lists, 0);
 	for (LinkedList list:lists)
